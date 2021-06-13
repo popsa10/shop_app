@@ -69,10 +69,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
+  fonts:
     - family: Jannah
       fonts:
         - asset: assets/fonts/jannah.ttf
-
+          weight: 700
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

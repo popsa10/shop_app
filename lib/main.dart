@@ -38,19 +38,8 @@ class MyApp extends StatelessWidget {
   MyApp({Key key, this.widget}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(
-          create: (context) => ShopCubit()
-            ..getHomeProducts()
-            ..getCategories()
-            ..getUserData()
-            ..getFavProducts(),
-        ),
-        BlocProvider(
-          create: (context) => ShopLoginCubit(),
-        )
-      ],
+    return BlocProvider(
+      create: (context) => ShopLoginCubit(),
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'SHOP APP',
