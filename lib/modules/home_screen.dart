@@ -211,7 +211,7 @@ Widget buildCategories(Datum model) => Stack(
           child: Text(
             "${model.name}",
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white, fontSize: 12),
           ),
         )
       ],
